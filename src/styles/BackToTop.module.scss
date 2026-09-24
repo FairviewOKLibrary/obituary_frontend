@@ -1,0 +1,14 @@
+.backtotop {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: yellow;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+
+    img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
