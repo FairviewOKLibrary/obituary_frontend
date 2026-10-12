@@ -68,7 +68,7 @@ const Home = ({ searchParams }: any) => {
     // setInitialPageLoad(false)
     // setLoading(true)
 
-    const url = `http://localhost:3001/obituary/search?${filteringType}=${inputValue}&limit=${limit}&page=${page * limit}`;
+    const url = `http://${process.env.BACKEND_URL}/obituary/search?${filteringType}=${inputValue}&limit=${limit}&page=${page * limit}`;
     try {
       console.log(inputValue)
       const response = await fetch(url, {
@@ -115,7 +115,7 @@ const Home = ({ searchParams }: any) => {
       <div className={styles.page}>
         <div>
           {page + 1}
-          <p>It is this Library's goal to provide as much resource material to our local community...</p>
+          <p>It is this Library's goal to provide as much resource material to our local community... S</p>
         </div>
         <br />
         {
